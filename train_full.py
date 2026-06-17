@@ -73,5 +73,3 @@ if __name__ == "__main__":
         # 1周（100曲分）終わるごとの平均のズレを表示
         average_loss = total_loss / len(dataloader)
         print(f"Epoch {epoch:2d}/{epochs} | 平均のズレ(Loss): {average_loss:.4f}")
-        
-    print("\n✅ 完全統合テスト成功！本物のAIパイプラインが完成しました！")

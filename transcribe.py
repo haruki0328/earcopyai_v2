@@ -50,7 +50,3 @@ for i in range(3):
     prob_percent = top3_probs[i].item() * 100
     
     print(f"  🏆 候補{i+1}: 【 {string_num}弦 {fret_num}フレット 】 (AIの確信度: {prob_percent:.2f}%)")
-
-print("\n💡 実際のシステムでは、この各時間フレームの候補に対して")
-print("「ビタビアルゴリズム（指の移動コスト）」を掛け合わせることで、")
-print("人間が最も弾きやすい完璧なTAB譜（MIDI）を生成します！")

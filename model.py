@@ -39,21 +39,3 @@ class EarCopyBrain(nn.Module):
         x = self.features(x)
         x = self.classifier(x)
         return x
-
-# テスト実行部分
-if __name__ == "__main__":
-    # 1. AIの脳みそをインスタンス化（誕生させる）
-    model = EarCopyBrain()
-    print("🧠 AIの脳みそ（CNNモデル）が誕生しました！\n")
-    
-    # 2. ダミーのCQT画像データを作成して、脳みそに推論させてみる
-    # [バッチサイズ(1), チャンネル(1:白黒画像), 音階(84), 時間フレーム(100)]
-    dummy_cqt = torch.randn(1, 1, 84, 100)
-    
-    # 3. 脳みそにデータを流し込む！
-    output = model(dummy_cqt)
-    
-    print(f"✅ 入力データのサイズ: {dummy_cqt.shape} （CQT画像）")
-    print(f"✅ 出力データのサイズ: {output.shape} （120通りの運指の確率！）")
-    print("\nモデルの構造:")
-    print(model)
