@@ -76,6 +76,7 @@ graph TD
     
     %% サブグラフ(Backend)自体の背景色と枠線
     style Backend fill:#f8fafc,stroke:#94a3b8,stroke-width:2px,rx:10,ry:10;
+```
 
 ## コア機能 (Core Features)
 - **Deep Learning Acoustic Parsing**: `librosa`のCQT（定Q変換）とCNNを用いた高精度な音響解析。10ms単位で120クラス（6弦×20フレット）の活性確率を出力。
